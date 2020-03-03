@@ -17,7 +17,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="site.html"> Home </a></li>
+                    <li><a href="index.html"> Home </a></li>
                     <li><a href="blog.html"> Blog</a></li>
                     <li><a href="about.html"> About</a></li>
                     <li class="current"><a href="service.html"> Services </a></liclass="current">
@@ -32,9 +32,9 @@
 
         <div class="con">
             <h1> Subscribe To Our Newsletter </h1>
-            <form>
+            <form method="POST" data-netlify="true" name="subscribe">
 
-                <input type="email" placeholder="Enter E-mail...">
+                <input name="email-subscribe" type="email" placeholder="Enter E-mail...">
                 <button type="submit" class="btn_1"> Subscribe </button>
             </form>
 
@@ -77,19 +77,19 @@
             <aside class="sidebar">
                 <div class="dark">
                     <h3 style="text-align: center;" >Get a Quote </h3><br>
-                    <form class="quote"><br>
+                    <form name="Quote" class="quote" method="POST" data-netlify="true"><br>
                         <div>
                             <label>Name</label><br>
-                            <input type="text" placeholder="Name">
+                            <input type="text" name="name-quote" placeholder="Name">
                         </div>
                         <div>
                             <label> Email </label><br>
-                            <input type="email" placeholder="Email Addess">
+                            <input type="email" name="email-quote" placeholder="Email Addess">
 
                         </div>
                         <div>
                             <label>Message</label><br>
-                            <textarea class="txt" placeholder="message"></textarea>
+                            <textarea class="txt" name="message-quote" placeholder="message"></textarea>
                         </div>
                         <button class="btn_1" type="submit">Send</button>
                     </form>
